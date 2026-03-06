@@ -1,0 +1,821 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Rubik, sans-serif;
+}
+
+h1 {
+	font-weight: normal;
+	font-family: "Lifehack Basic";
+	font-size: 84px;
+	color: #49345A;
+}
+h2 {
+	font-weight: normal;
+	font-family: "Lifehack Basic";
+	font-size: 64px;
+	color: #6B3E91;
+	text-align: center;
+}
+h3 {
+	font-weight: normal;
+	font-size: 23px;
+	color: #6B3E91;
+}
+h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    height: 47px;
+    padding: 0;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+}
+.main-nav {
+	width: 75%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+}
+
+.site-navigation {
+	width: 60%;
+	display: flex;
+	margin-right: auto;
+	margin-left: 3%;
+}
+.site-navigation-item {
+	margin: 0 30px;
+}
+.site-navigation-item a {
+	color: #6B3E91;
+	transition: 0.3s;
+}
+.site-navigation-item a:hover, .site-navigation-item a:focus {
+	color: #F59F42;
+	transition: 0.3s;
+}
+.soc-icons {
+	display: flex;
+	width: 111px;
+}
+.soc-icons li {
+	margin: 10px;
+}
+.hero {
+	width: 100%;
+	height: 780px;
+	margin: 50px auto;
+	background-image: url(../img/index_berry.jpg);
+	display: flex;
+	background-repeat: no-repeat;
+	background-position: center;
+	justify-content: center;
+}
+.hero-text {
+	width: 365px;
+	margin-top: 200px;
+}
+.hero-info {
+	width: 338px;
+	margin-bottom: 20px;
+}
+.button-order {
+	width: 226px;
+	height: 55px;
+	border: 3px solid #F59F42;
+	background-color: #fff;
+	border-radius: 32px;
+	font-size: 16px;
+	color: #49345A;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.button-order:hover, .button-order:focus {
+	background-color: #F59F42;
+	color: #fff;
+	transition: 0.5s;
+}
+.hero-text h1 {
+	line-height: 90%;
+	margin-bottom: 15px;
+}
+.invise {
+	opacity: 0;
+}
+.hero-text h1::before {
+	content: url(../img/index_blue.png);
+	position: absolute;
+	transform: translateX(63px);
+}
+.hero-img {
+	margin-top: 120px;
+	position: relative;
+	transform: translateX(80px);
+}
+.hero-big {
+	font-family: "Lifehack Basic";
+	font-size: 100px;
+}
+.about-us {
+	background-image: url(../img/index_about.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 560px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.about-us-content {
+	margin: auto;
+	width: 750px;
+}
+.about-us-text {
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+.about-us-content h2 {
+	color: white;
+	margin-bottom: 20px;
+}
+.button-about  {
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  color: white;
+  margin-top: 20px;
+  align-items: center;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto;
+  width: 180px;
+}
+.button-about::after {
+  content: url(../img/index_arrow.svg);
+  position: absolute;
+  transform: translateY(-3px) translateX(10px);
+}
+.catalog {
+    width: 57%;
+    margin: 80px auto 0 auto;
+}
+.catalog-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 140px;
+}
+.button-catalog {
+    height: 176px;
+    width: 230px;
+    border-radius: 25px;
+    border: 3px solid #6B3E91;
+    margin-bottom: 150px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #6B3E91;
+    background-color: white;
+    margin: 20px 20px 110px 20px;
+}
+.button-catalog:hover, .button-catalog:focus {
+    border: 3px solid #F59F42;
+    transition: 0.3s;
+    color: #F59F42;
+}
+.catalog-text {
+    text-align: center;
+    width: 170px;
+    margin: 120px auto 0px auto;
+    font-size: 23px;
+}
+#button-catalog-marry-cakes .catalog-text {
+    margin: 105px auto 0px auto;
+}
+#button-catalog-cakes::before {
+    content: url(../img/index_cakes.png);
+    position: absolute;
+    transform: translate(-100px,-120px);
+}
+#button-catalog-desserts::before {
+    content: url(../img/index_macaron.png);
+    position: absolute;
+    transform: translate(-100px,-80px);
+}
+#button-catalog-marry-cakes::before {
+    content: url(../img/index_marry-cake.png);
+    position: absolute;
+    transform: translate(-120px,-130px);
+}
+#button-catalog-another::before {
+    content: url(../img/index_bento-cake.png);
+    position: absolute;
+    transform: translate(-120px,-110px);
+}
+.catalog-fillings {
+	display: flex;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	margin-top: -30px;
+}
+.catalog-fillings-text {
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.catalog-fillings-text h3 {
+	font-family: Rubik;
+	font-size: 50px;
+	font-weight: normal;
+	color: #F59F42;
+	margin-bottom: 23px;
+	width: 440px;
+}
+.catalog-fillings-text p {
+	margin-bottom: 23px;
+	width: 440px;
+}
+.main-footer {
+	background-color: #6B3E91;
+	border-radius: 50px 50px 0 0;
+	padding: 45px 15%;
+	display: flex;
+	margin-top: 150px;
+}
+.copyright-text {
+	color: white;
+	font-size: 12px;
+	width: 178px;
+	margin-top: 10px;
+	margin-right: 160px;
+	font-weight: 300;
+}
+.footer_phone-email a {
+	color: white;
+	font-size: 20px;
+	transition: 0.3s;
+}
+.footer_phone-email a:hover, .footer_phone-email a:focus {
+	color: #F59F42;
+	transition: 0.3s;
+}
+.footer_phone-email li {
+	margin-top: 15px;
+	font-weight: 400;
+}
+.footer_site-navigation a {
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+	transition: 0.3s;
+}
+.footer_site-navigation a:hover, .footer_site-navigation a:focus {
+	color: #F59F42;
+	transition: 0.3s;
+}
+.footer_site-navigation li {
+	margin-bottom: 10px;
+}
+.footer_contacts {
+	width: 30%;
+	justify-content: space-between;
+}
+.footer_phone::before {
+	content: url(../img/footer_phone.svg);
+	position: absolute;
+	transform: translate(-30px, -2px);
+}
+.footer_email::before {
+	content: url(../img/footer_email.svg);
+	position: absolute;
+	transform: translate(-30px, -2px);
+}
+.footer_contacts .soc-icons {
+	margin-left: -40px;
+	margin-bottom: -5px;
+}
+.footer_site-navigation {
+	margin-left: auto;
+}
+
+
+.about-text {
+	width: 63%;
+	margin: 20px auto;
+	font-size: 20px;
+	text-align: center;
+}
+.about-text p {
+	margin-top: 30px;
+}
+
+video {
+	width: 100%;
+}
+
+.comments {
+	margin-top: 100px;
+	margin-bottom: -80px;
+}
+.comments-boxes {
+    display: flex;
+    margin: 30px auto;
+    width: 55%;
+    align-items: center;
+    justify-content: center;
+}
+.comment {
+    width: 270px;
+    height: 380px;
+    border: 3px solid #6B3E91;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.comment_text {
+    font-family: Rubik;
+    font-size: 18px;
+    color: black;
+}
+.author-name {
+    font-family: Rubik;
+    font-size: 23px;
+    width: 50%;
+    margin-top: 10px;
+    color: #6B3E91;
+}
+.author {
+    margin-top: auto;
+}
+.comment:nth-child(1)::before {
+    content: url(../img/stars-1.svg);
+    position: absolute;
+    transform: translate(55px, -60px);
+}
+.comment:nth-child(2)::before {
+    content: url(../img/stars-2.svg);
+    position: absolute;
+    transform: translate(55px, -60px);
+}
+.comment:nth-child(3)::before {
+    content: url(../img/stars-3.svg);
+    position: absolute;
+    transform: translate(55px, -60px);
+}
+
+
+
+.cards-info {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+}
+.center{
+    width: 270px;
+    height: 270px;
+    margin: auto;
+}
+
+.card{
+    cursor: pointer;
+    margin-top: 80px;
+}
+.card h3 {
+	margin-top: 10px;
+}
+.front,
+.back{
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.4s linear;
+
+    border: 3px solid #6B3E91;
+    border-radius: 30px;
+    width: 270px;
+    height: 270px;
+}
+
+.front{
+    transform: perspective(600px) rotateY(0deg);
+    background-color: white;
+}
+
+.back{
+    transform: perspective(600px) rotateY(180deg);
+    background-color: white;
+}
+
+.front-content, .back-content {
+    text-align: center;
+    color: #6B3E91;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+
+
+.assortiment {
+	width: 70%;
+	justify-content: center;
+	margin: 0 auto;
+}
+.cakes-cards, .marry_cakes-cards, .fillings-cards, .desserts-cards, .another-cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px auto;
+}
+.cakes-card {
+	width: 247px;
+	height: 440px;
+	padding: 0;
+	margin: 10px 35px;
+}
+.cakes-card .button-order {
+	margin-left: 11px;
+}
+.button-struc {
+	background-color: transparent;
+	border: none;
+	font-size: 14px;
+	color: #6B3E91;
+	text-decoration: underline;
+	cursor: pointer;
+	float: right;
+}
+.info {
+	display: flex;
+	width: 222px;
+	justify-content: space-between;
+	margin: 2px auto;
+	font-size: 14px;
+}
+.cake-price {
+	width: 200px;
+	margin: 3px auto;
+	font-size: 24px;
+}
+.composition-text {
+	position: absolute;
+	width: 200px;
+	height: 240px;
+	background-color: white;
+	border: 2px solid #6B3E91;
+	transform: translate(40px, -310px);
+	padding: 10px;
+	border-radius: 20px;
+}
+.composition-arrow {
+	position: absolute;
+	transform: translate(80px, -80px);
+	color: white;
+}
+.composition-arrow::after {
+	content: " ";
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	position: absolute;
+	transform: translate(90px, 23px) rotate(45deg);
+	border-bottom: 2px solid #6B3E91;
+	border-right: 2px solid #6B3E91;
+}
+
+
+
+.sales {
+	margin: 30px auto;
+}
+.sale-birthday {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	width: 1140px;
+}
+.sales h2 {
+	margin-bottom: 30px;
+}
+.sales-text p {
+	font-size: 20px;
+	margin-bottom: 30px;
+	line-height: 140%;
+}
+.sales-text {
+	margin-left: 4%;
+}
+
+
+
+.contacts-info {
+	width: 850px;
+	height: 437px;
+	position: relative;
+	margin: 0 auto -200px auto;
+	transform: translateY(-120px);
+	background-color: #F59F42;
+	border-radius: 30px;
+	display: flex;
+}
+.contacts-info p, .contacts-info h3, .contacts-info a {
+	color: white;
+}
+.contacts-info p, .contacts-info a {
+	font-size: 20px;
+}
+.contacts-info p {
+	margin-top: 20px;
+	width: 80%;
+	line-height: 140%;
+}
+.contacts-info div {
+	padding: 30px;
+}
+.contacts-items {
+	margin-top: 90px;
+}
+.contacts-item {
+	margin: 20px 40px;
+	width: 60%;
+}
+.contacts-item:first-child::before {
+	content: url(../img/contacts_email.svg);
+	position: absolute;
+	transform: translateX(-40px) translateY(-5px);
+}
+.contacts-item:nth-child(2)::before {
+	content: url(../img/contacts_phone.svg);
+	position: absolute;
+	transform: translateX(-40px);
+}
+.contacts-item:nth-child(3)::before {
+	content: url(../img/contacts_loc.svg);
+	position: absolute;
+	transform: translateX(-40px) translateY(5px);
+}
+.contacts-form {
+	width: 80%;
+	background-color: white;
+	border-radius: 30px;
+	border: 3px solid #F59F42;
+}
+.contacts-form input, .contacts-form textarea {
+	width: 305px;
+	height: 22px;
+	border-radius: 30px;
+	border: 3px solid #F59F42;
+	margin-bottom: 10px;
+	padding: 7px;
+}
+.contacts-form input::placeholder, textarea[text-comment] {
+	color: #6B3E91;
+}
+.contacts-form textarea {
+	height: 88px;
+	border-radius: 20px;
+}
+.contacts-form input:last-child {
+	width: 226px;
+	height: 55px;
+	border: 3px solid #F59F42;
+	background-color: #fff;
+	border-radius: 32px;
+	font-size: 16px;
+	color: #49345A;
+	cursor: pointer;
+	transition: 0.5s;
+	margin: 0 auto;
+	display: block;
+}
+.map {
+	margin-top: 20px;
+}
+
+
+@media(max-width:1290px) {
+	.site-navigation {
+		flex-wrap: wrap;
+	}
+	.catalog-cards {
+		flex-wrap: wrap;
+	}
+	.hero-img {
+		margin-top: 120px;
+		position: relative;
+		transform: translateX(30px);
+	}
+	.comments-boxes {
+    	flex-wrap: wrap;
+	}
+	.cakes-cards, .marry_cakes-cards, .fillings-cards, .desserts-cards, .another-cards {
+		justify-content: center;
+	}
+	.sale-birthday {
+		width: 80%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.sales-text p {
+		width: 540px;
+		margin-top: 30px;
+	}
+	.contacts-info {
+		width: 55%;
+		height: 100%;
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+	}
+	.contacts-items {
+		margin-top: 60px;
+	}
+	.contacts-form {
+		width: 100%;
+	}
+	.contacts-form input, .contacts-form textarea {
+		width: 95%;
+	}
+	.footer_contacts {
+		margin-left: -70px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+	.main-nav {
+		width: 190px;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.logo {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+	.site-navigation {
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+	.soc-icons {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		margin: 0 auto;
+		margin-left: 10px;
+	}
+    .hero-img {
+    	display: none;
+    }
+    .hero {
+		height: auto;
+		margin: 10px auto;
+		background-image: none;
+	}
+	.hero-text {
+		margin-top: 100px;
+		margin-bottom: 100px;
+		text-align: center;
+	}
+	.about-us-content {
+		width: 80%;
+	}
+
+	.catalog {
+	    width: 80%;
+	}
+	.button-catalog {
+	    width: 180px;
+	}
+	#button-catalog-cakes::before {
+	    content: url(../img/index_cakes.png);
+	    position: absolute;
+	    transform: translate(-100px,-100px) scale(0.8);
+	}
+	#button-catalog-desserts::before {
+	    content: url(../img/index_macaron.png);
+	    position: absolute;
+	    transform: translate(-100px,-60px) scale(0.8);
+	}
+	#button-catalog-marry-cakes::before {
+	    content: url(../img/index_marry-cake.png);
+	    position: absolute;
+	    transform: translate(-120px,-110px) scale(0.8);
+	}
+	#button-catalog-another::before {
+	    content: url(../img/index_bento-cake.png);
+	    position: absolute;
+	    transform: translate(-120px,-90px) scale(0.8);
+	}
+	.catalog-fillings {
+		flex-direction: column-reverse;
+	}
+	.catalog-fillings-text {
+		text-align: center;
+	}
+	.catalog-fillings h3 {
+		width: 100%;
+	}
+	.catalog-fillings-text p {
+		margin-bottom: 23px;
+		width: 100%;
+	}
+	.catalog-fillings img {
+		width: 400px;
+		margin: 30px auto -30px auto;
+	}
+	.main-footer {
+		padding: 45px 5%;
+		flex-wrap: wrap;
+		width: 90%;
+	}
+	.copyright-text {
+		width: 150px;
+		margin-top: 10px;
+		margin-right: 0;
+		margin-left: 10px;
+	}
+	.footer_contacts {
+		width: 40%;
+		margin-left: 10%;
+	}
+	.footer_contacts .soc-icons {
+		margin-left: -80px;
+		margin-bottom: -5px;
+	}
+	.footer_site-navigation {
+		margin-left: 30px;
+		margin-top: 20px;
+	}
+	.center {
+		transform: scale(0.8);
+		width: 160px;
+	}
+	.catalog-cards {
+		width: 100%;
+	}
+	.cards-info {
+	    width: 100%;
+	}
+	.center{
+	    width: 270px;
+	    height: 270px;
+	    margin: auto;
+	}
+	.assortiment {
+		width: 95%;
+		margin: 0;
+	}
+
+	.cakes-card {
+		transform: scale(0.7);
+		width: 170px;
+		margin: -40px 20px -40px 20px;
+	}
+	.cakes-card h4{
+		width: 140%;
+		text-align: center;
+	}
+	.info {
+		margin-left: 12px;
+	}
+	.assortiment h2 {
+		margin-left: 40px;
+	}
+	.sale-birthday {
+		text-align: center;
+	}
+	.contacts-info {
+		width: 85%;
+	}
+}
